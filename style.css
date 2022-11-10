@@ -1,6 +1,27 @@
+@media (max-width: 960px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* Pour un écran < 720px, cette classe CSS s'applique */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* Pour un écran < 540px, cette classe CSS s'applique */
+  .container {
+    width: 300px;
+  }
+}
+
 body{
   font-family:Space Grotesk;
-  background-color: rgb(255, 238, 195);
+  background-color: rgb(0, 0, 0);
   color: #ffffff;
   padding: 30px;
   text-align: center;
@@ -16,7 +37,7 @@ li{
   text-align: center;
 }
 ul{
-  padding:0;
+  padding: 0;
   text-align: center;
 }
 
@@ -30,7 +51,7 @@ a{
 a:hover{
   color: rgb(147, 125, 214);
 }
-#profile-pic{
+.profile-pic{
   width:200px;
   height:200px;
   border-radius:50%;
@@ -94,7 +115,7 @@ body {
 #infos {
   position: absolute;
   z-index: 100;
-  left: 150px;
+  left: 350px;
 }
 #retrobg {
   position: relative;
@@ -274,5 +295,42 @@ body {
 }
 
 .chap {
-  font-size: 23px;
+  font-size: 22px;
+}
+
+#easter_egg {
+  color: #f9c847;
+}
+
+.gif-dance {
+  position: relative;
+  /* left: 100px; */
+  height: 500px;
+  width: 500px;
+  top: -350px;
+  /* z-index: 100; */
+}
+
+.gif-chad {
+  position: relative;
+  top: -1009px;
+  left: 234px;
+}
+
+/* .img-tv {
+  position: relative;
+  top: -490px;
+  rotate: -90deg;
+} */
+
+  div, html, body {
+    /* cursor: wait; */
+    cursor: image-set( "dj.png" type("image/png"));
+  }
+
+.gif-sponge {
+  position: relative;
+  top: -1100px;
+  left: 400px;
+
 }
